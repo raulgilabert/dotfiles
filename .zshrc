@@ -26,10 +26,10 @@ RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 
 alias p1++="g++ -ansi -O2 -DNDEBUG -D_GLIBCXX_DEBUG -Wall -Wextra -Werror -Wno-sign-compare -Wshadow"
 alias vim="nvim"
-alias minecraft="LC_ALL=C minecraft-launcher"
+#alias minecraft="LC_ALL=C minecraft-launcher"
 alias py="python3"
-alias testerpro1="python3 ~/universidad/PRO1/tester.py"
-alias libgen="~/.executables/libgen-cli-v1.0.7-linux"
+#alias testerpro1="python3 ~/universidad/PRO1/tester.py"
+#alias libgen="~/.executables/libgen-cli-v1.0.7-linux"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -124,4 +124,3 @@ source $ZSH/oh-my-zsh.sh
 
 echo ""
 neofetch
-sensors | grep -A 0 'Core' --color=none
