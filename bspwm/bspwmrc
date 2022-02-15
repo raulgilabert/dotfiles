@@ -21,7 +21,8 @@ bspc config gapless_monocle      true
 setxkbmap es
 #zsh ~/.config/polybar/launch.sh --cuts
 picom &
-~/launchpoly.sh &
+polybar -r bar_up &
+polybar -r bar_down &
 xrandr --output eDP1 --primary --auto --output HDMI1 --right-of eDP1
 feh --bg-fill ~/Images/wallpapers/wallpaper.jpg
 spotifyd --verbose --no-daemon -b pulseaudio -d echuxamePixa -u raulgilabertgamez -p Raul.2003 &

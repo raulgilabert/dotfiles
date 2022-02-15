@@ -24,11 +24,6 @@ syntax on
 set termguicolors
 colorscheme monokai_pro
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-
 
 set colorcolumn=80
 set relativenumber
