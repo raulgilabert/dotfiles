@@ -68,16 +68,30 @@ format-offset =
 ;color2 = #2c7873
 ;text = #c4dff6
 
+;background = #000c0c0c
+;foreground = #bdc0c0
+;foreground-2 = #656565
+;alert = #bd2c40
+;volume-min = #a3be8c
+;volume-med = #ebcb8b
+;volume-max = #bf616a
+;color1 = #171010
+;color2 = #362222
+;text = #bdc0c0
+
+; ========================
+
 background = #000c0c0c
 foreground = #bdc0c0
-foreground-2 = #555555
+foreground-2 = #656565
 alert = #bd2c40
 volume-min = #a3be8c
 volume-med = #ebcb8b
 volume-max = #bf616a
-color1 = #171010
-color2 = #362222
-text = #bdc0c0
+color1 = #18457f
+color2 = #1d1d1d
+text = #a9a5a3
+
 
 ################################################################################
 ################################################################################
@@ -1117,7 +1131,7 @@ label-disconnected-foreground = ${colors.foreground}
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
 interface = wlp0s20f3
-interval = 3.0
+interval = 0.5
 label-connected = " %essid%"
 
 format-connected = <label-connected>

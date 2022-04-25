@@ -34,13 +34,13 @@ super + b
     firefox --enable-alsa
 
 super + e
-    /home/raulg/Downloads/jetbrains-toolbox-1.21.9712/jetbrains-toolbox
+    /home/raulg/jetbrains-toolbox-1.22.10970/jetbrains-toolbox
 
 super + ctrl + s
-    scrot
+    scrot -e 'mv $f ~/Images/'
 
 super + ctrl + shift + s
-    scrot -s
+    scrot -s -e 'mv $f ~/Images/'
 
 
 # terminal emulator
@@ -49,8 +49,8 @@ super + Return
 
 # program launcher
 super + space
-#	dmenu_run
-    ulauncher
+	dmenu_run
+#    ulauncher
 
 # make sxhkd reload its configuration files:
 super + Escape
