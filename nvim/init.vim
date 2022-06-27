@@ -24,10 +24,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify' 
 Plug 'joshdick/onedark.vim'
-Plug 'flazz/vim-colorschemes'
+"Plug 'flazz/vim-colorschemes'
 Plug 'airblade/vim-gitgutter'
-"Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 "Plug 'akinsho/bufferline.nvim'
+Plug 'KabbAmine/zeavim.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -40,6 +42,9 @@ colorscheme gruvbox
 
 
 set colorcolumn=80
+set tw=79
+
+
 set relativenumber
 set number
 set cursorline
@@ -103,7 +108,8 @@ let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-json',
   \ 'coc-eslint',
-  \ 'coc-prettier'
+  \ 'coc-prettier',
+  \ 'coc-rls',
   \ ]
 
 

@@ -73,7 +73,7 @@ def main():
                 if(group == "Atmosphere"):
                     return atmophere_icons_list[id] + '{}°{}'.format(temp, temperature_unit)
 
-                return icons_list[icon] + '%{F${colors.text}' + '{}°{}'.format(temp, temperature_unit) + '%{F-}'
+                return icons_list[icon] + '{}°{}'.format(temp, temperature_unit) + '%{F-}'
         else:
             return "  " # Return reload icon
     except:

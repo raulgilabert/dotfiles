@@ -23,7 +23,6 @@ polybar -r bar_up &
 polybar -r bar_down &
 xrandr --output eDP1 --primary --auto --output HDMI1 --auto --right-of DP1 --output DP1 --auto --right-of eDP1
 feh --bg-fill ~/Images/wallpapers/rei-ayanami.png
-spotifyd --verbose --no-daemon -b pulseaudio -d echuxamePixa -u raulgilabertgamez -p Raul.2003 &
 
 
 bspc monitor -d I II III IV V VI VII VIII IX X
