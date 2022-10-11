@@ -1,5 +1,5 @@
-set shiftwidth=4
-
+ set shiftwidth=4
+ 
 call plug#begin("~/.config/nvim/plugged")
 Plug 'phanviet/vim-monokai-pro'
 "Plug 'ncm2/ncm2'
@@ -30,6 +30,7 @@ Plug 'ryanoasis/vim-devicons'
 "Plug 'akinsho/bufferline.nvim'
 Plug 'KabbAmine/zeavim.vim'
 Plug 'morhetz/gruvbox'
+Plug 'petertriho/nvim-scrollbar'
 
 call plug#end()
 
@@ -77,7 +78,7 @@ nnoremap <silent> <C-l> :call WinMove('l')<CR>
 
 nnoremap <silent> <space> :VTerm <CR>
 
-vmap <F3> :s/^/# /<CR>
+vmap <F3> :s/^/\/\/ /<CR>
 
 " Extra commands
 
@@ -86,7 +87,7 @@ command! Qa qa " Quit all while still pressing Shift
 command! W w " Write while still pressing Shift
 command! Wq wq " Write-quit while still pressing Shift
 command! Wqa wqa " Write-quit all while still pressing Shift
-
+ 
 " Airline
 
 let g:airline_left_sep=''
@@ -109,8 +110,6 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-eslint',
   \ 'coc-prettier',
-  \ 'coc-rls',
+ \ 'coc-rust-analyzer',
   \ ]
-
-
 

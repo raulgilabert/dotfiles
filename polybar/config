@@ -21,6 +21,7 @@
 ;https://github.com/jaagr/polybar/wiki/Configuration#global-wm-settings
 margin-top = 0
 margin-bottom = 0
+wm-restack = bspwm
 
 [settings]
 ;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
@@ -969,6 +970,37 @@ format-underline = #0f0
 format-prefix = "  "
 format-prefix-foreground = #0f0
 label = %output:0:150%
+
+################################################################################
+
+[module/spotify]
+type = custom/script
+tail = true
+interval = 1
+; prefix symbol is shown before the text
+format-prefix = "<prefix-symbol>"
+format = <label>
+exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+
+[module/spotify-prev]
+type = custom/script
+exec = echo "<previous-song-symbol>"
+format = <label>
+click-left = playerctl previous -p spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo "<playing-symbol>"
+hook-1 = echo "<pause-symbol>"
+initial = 1
+click-left = playerctl play-pause -p spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo "next-song-symbol"
+format = <label>
+click-left = playerctl next -p spotify
+
 
 ################################################################################
 

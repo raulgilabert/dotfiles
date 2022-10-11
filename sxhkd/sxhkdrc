@@ -27,6 +27,15 @@ XF86AudioPrev
 XF86AudioNext
     playerctl next -p spotifyd
 
+#
+# Brightness
+#
+
+XF86MonBrightnessUp
+    brightness --up .05
+
+XF86MonBrightnessDown
+    brightness --down .05
 
 # Execute programs
 
@@ -34,7 +43,7 @@ super + b
     firefox --enable-alsa
 
 super + e
-    /home/raulg/jetbrains-toolbox-1.22.10970/jetbrains-toolbox
+    kitty nvim
 
 super + ctrl + s
     scrot -e 'mv $f ~/Images/'

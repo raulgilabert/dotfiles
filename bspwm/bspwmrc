@@ -24,5 +24,8 @@ polybar -r bar_down &
 xrandr --output eDP1 --primary --auto --output HDMI1 --auto --right-of DP1 --output DP1 --auto --right-of eDP1
 feh --bg-fill ~/Images/wallpapers/rei-ayanami.png
 
+bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+kitty nohup /home/raulg/gitCloned/activate-linux/activate-linux -t "Activate Void Linux" -m "Go to Settings to activate Void Linux" &
+
+pkill kitty
