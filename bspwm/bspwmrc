@@ -19,10 +19,10 @@ bspc config gapless_monocle      true
 setxkbmap es
 #zsh ~/.config/polybar/launch.sh --cuts
 picom &
-polybar -r bar_up &
-polybar -r bar_down &
+polybar -r new &
 xrandr --output eDP1 --primary --auto --output HDMI1 --auto --right-of DP1 --output DP1 --auto --right-of eDP1
-feh --bg-fill ~/Images/wallpapers/rei-ayanami.png
+feh --bg-fill ~/Images/wallpapers/rei_awa.png
+clipit &
 
 bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
 
