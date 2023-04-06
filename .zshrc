@@ -4,11 +4,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export GPG_TTY=$(tty)
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="jispwoso"
+#ZSH_THEME="agnoster"
+# ultima ZSH_THEME="jispwoso"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="mairan"
 
 ### ALIASES
 alias cd..="cd .."
@@ -22,11 +27,33 @@ alias cp="cp -i"
 alias rm="rm -i"
 alias ln="ln -i"
 
+alias dc="cd"
+alias sl="lsd"
+alias got="git"
+alias please="sudo"
+
 alias reboot="sudo reboot"
 alias shutown="sudo shutdown"
 alias amimir="sudo shutdown"
 
-alias killall -q="pkill"
+alias cat="bat"
+
+alias vi="vim"
+alias py="python3"
+
+alias g++="g++ -std=c++17"
+
+
+command_not_found_handler() {
+    echo "Jaja te equivocaste"
+}
+
+function cd ()
+{
+  builtin cd "$@" && lsd
+}
+
+export PATH="/home/raulg/.local/bin/:$PATH"
 
 
 # Set list of themes to pick from when loading at random
@@ -89,7 +116,8 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history emoji zsh-autosuggestions)
+plugins=(git history zsh-autosuggestions colored-man-pages zsh-syntax-highlighting)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,12 +142,10 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-clear
-neofetch
+#clear
+#neofetch
 echo "Let's all love Lain"
-

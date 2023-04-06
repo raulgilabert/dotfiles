@@ -42,6 +42,9 @@ XF86MonBrightnessDown
 super + b
     firefox --enable-alsa
 
+super + y
+	firefox youtube.com
+
 super + e
     kitty nvim
 
@@ -82,8 +85,8 @@ super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+#super + y
+#	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
 super + g
